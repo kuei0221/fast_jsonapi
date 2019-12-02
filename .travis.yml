@@ -4,5 +4,8 @@ rvm:
   - 2.3.6
   - 2.4.3
   - 2.5.0
+before_install:
+  - gem uninstall bundler
+  - gem install bundler -v 1.0
 script:
   - bundle exec rspec
